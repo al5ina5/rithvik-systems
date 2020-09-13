@@ -28,7 +28,7 @@ export default function Taskbar() {
                 <i className="fas fa-chalkboard"></i>
             </div>
 
-            <div className="app hover">
+            <div className="app active hover">
                 <span className="iconify" data-icon="logos:chrome" data-inline="false"></span>
             </div>
 
