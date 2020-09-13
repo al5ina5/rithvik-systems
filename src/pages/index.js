@@ -1,6 +1,9 @@
-export default function Index() {
+import Desktop from '../components/Desktop/Desktop'
+import Taskbar from '../components/Taskbar/Taskbar'
 
+export default function Index() {
     return <>
-        RITHVIK Project Live — Continuous Deployment
+        <Desktop />
+        <Taskbar />
     </>
 }
