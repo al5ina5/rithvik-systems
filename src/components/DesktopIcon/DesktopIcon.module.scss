@@ -1,0 +1,28 @@
+.desktopIcon {
+    max-width: min-content;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+
+    .icon {
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+    .name {
+        padding: 0.2rem;
+        border-radius: 3px;
+    }
+}
+
+.desktopIcon:active, .desktopIcon.active {
+    text-shadow: none;
+    .name {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.2rem;
+        border-radius: 3px;
+    }
+}

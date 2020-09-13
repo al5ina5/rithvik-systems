@@ -59,9 +59,6 @@ html, body, #__next {
 * {
     box-sizing: border-box;
 }
-i {
-    line-height: 1rem;
-}
 
 .computer {
     display: flex;
@@ -70,6 +67,7 @@ i {
     background: url("/img/wallpaper.jpg");
     background-size: cover;
     background-position: center;
+    
 
     .desktop {
         height: 100%;
@@ -152,3 +150,7 @@ input {
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
+.tippy-tooltip {
+    background-color: tomato;
+    color: yellow;
+  }

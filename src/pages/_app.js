@@ -1,5 +1,6 @@
 import 'reset-css'
 import '../windows10css/windows10.scss'
+import '../windows10css/tippy.css'
 
 import Head from 'next/head'
 

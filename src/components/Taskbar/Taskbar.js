@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import moment from 'moment'
-import { motion } from 'framer-motion'
+import Tippy from '@tippyjs/react'
 
 import Cortana from '../Cortana/Cortana'
 
@@ -30,9 +30,7 @@ export default function Taskbar() {
                 <i className="fas fa-chalkboard"></i>
             </div>
 
-
-            {/* Disabled Apps */}
-            {/* <div className="app active hover">
+            <div className="app active hover">
                 <span className="iconify" data-icon="logos:chrome" data-inline="false"></span>
             </div>
 
@@ -42,7 +40,7 @@ export default function Taskbar() {
 
             <div className="app hover">
                 <span className="iconify" data-icon="vscode-icons:file-type-vscode2" data-inline="false"></span>
-            </div> */}
+            </div>
 
             <div className="padded small hover end">
                 <i className="fas fa-chevron-up"></i>
