@@ -3,7 +3,9 @@ import Taskbar from '../components/Taskbar/Taskbar'
 
 export default function Index() {
     return <>
-        <Desktop />
-        <Taskbar />
+        <div className="computer">
+            <Desktop />
+            <Taskbar />
+        </div>
     </>
 }

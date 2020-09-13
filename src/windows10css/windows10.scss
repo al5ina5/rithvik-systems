@@ -1,19 +1,118 @@
-html, body, #__next {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Semibold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    src: local("Segoe UI Bold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Segoe UI Italic");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Segoe UI Bold Italic");
 }
 
-.desktop {
+html, body, #__next {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background: url("/img/wallpaper.jpg");
     background-size: cover;
     background-position: center;
+
+    .desktop {
+        height: 100%;
+        // background-color: red;
+    }
+    
+    .taskbar {
+        background-color: rgba(15, 15, 15, 0.562);
+        color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        overflow: scroll;
+        white-space: nowrap;
+        font-weight: 100;
+
+        .padded {
+            padding: 1rem;
+        }
+
+        .hover {
+            transition: 0.15s ease all;
+            cursor: pointer;
+        }
+
+        .hover:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .hover:active, .hover:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .spacer {
+            width: 1rem;
+        }
+
+        .end {
+            margin-left: auto;
+        }
+
+        .app {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            padding: 0 0.8rem;
+        }
+
+        .desktop-button {
+            height: 100%;
+            width: 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    }
 }
 
-.taskbar {
-    padding: 1rem;
-    background-color: black;
-    color: white;
+.large {
+    // transform: scale(3);
+    // -webkit-transform: scale(3);
+}
+
+input {
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }
