@@ -5,11 +5,14 @@ import { motion } from 'framer-motion'
 import Cortana from '../Cortana/Cortana'
 
 export default function Taskbar() {
-    var [time, setTime] = useState()
+    var [shortTime, setShortTime] = useState()
+    var [longTime, setLongTime] = useState(0)
+    var [timeMode, setTimeMode] = useState(true)
 
     useEffect(() => {
         setInterval(() => {
-            setTime(moment().format("h:mm:ss a"))
+            setShortTime(moment().format("h:mm:ss a"))
+            setLongTime(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
         }, 1000)
     }, [])
 
@@ -20,6 +23,10 @@ export default function Taskbar() {
             </div>
 
             <Cortana />
+
+            <div className="padded hover">
+                <i className="fas fa-chalkboard"></i>
+            </div>
 
             <div className="app hover">
                 <span className="iconify" data-icon="logos:chrome" data-inline="false"></span>
@@ -34,8 +41,22 @@ export default function Taskbar() {
 
             {/* <div className="padded end">&nbsp;</div> */}
 
-            <div className="padded hover end">
-                <p>{time}</p>
+            <div className="padded small hover end">
+                <i className="fas fa-wifi"></i>
+            </div>
+
+            <div className="padded small hover">
+                <i className="fas fa-volume-mute"></i>
+            </div>
+
+            <div className="padded small hover">
+                <i className="fas fa-battery-full"></i>
+            </div>
+
+            <div className="padded hover" onClick={() => {
+                timeMode ? setTimeMode(false) : setTimeMode(true)
+            }}>
+                <p>{timeMode ? shortTime : longTime}</p>
             </div>
 
             <div className="desktop-button hover"></div>

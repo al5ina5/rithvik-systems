@@ -67,6 +67,10 @@ html, body, #__next {
             padding: 1rem;
         }
 
+        .padded.small {
+            padding: 1rem 0.5rem;
+        }
+
         .hover {
             transition: 0.15s ease all;
             cursor: pointer;
