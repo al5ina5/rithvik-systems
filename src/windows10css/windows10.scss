@@ -76,6 +76,7 @@ html, body, #__next {
         overflow: scroll;
         white-space: nowrap;
         font-weight: 100;
+        backdrop-filter: blur(40px);
 
         .padded {
             padding: 1rem;
