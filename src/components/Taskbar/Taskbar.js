@@ -30,7 +30,7 @@ export default function Taskbar() {
                 <i className="fas fa-chalkboard"></i>
             </div>
 
-            <div className="app active hover">
+            {/* <div className="app active hover">
                 <span className="iconify" data-icon="logos:chrome" data-inline="false"></span>
             </div>
 
@@ -39,8 +39,8 @@ export default function Taskbar() {
             </div>
 
             <div className="app hover">
-                <span className="iconify" data-icon="vscode-icons:file-type-vscode2" data-inline="false"></span>            </div>
-
+                <span className="iconify" data-icon="vscode-icons:file-type-vscode2" data-inline="false"></span>
+            </div> */}
 
             <div className="padded small hover end">
                 <i className="fas fa-chevron-up"></i>
