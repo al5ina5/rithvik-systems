@@ -8,9 +8,9 @@ export default function Cortana() {
             
             input {
                 width: 130px;
-                padding: 0 0.5rem;
-                background-color: transparent;
+                padding: 0 1rem;
                 border: 0;
+                background-color: transparent;
                 color: white;
                 transition: 0.15s ease all;
             }

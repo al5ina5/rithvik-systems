@@ -19,7 +19,9 @@ export default function Taskbar() {
     return <>
         <div className="taskbar">
             <div className="padded hover">
-                <i className="fab fa-windows"></i>
+                <p>
+                    <i className="fab fa-windows"></i>
+                </p>
             </div>
 
             <Cortana />
