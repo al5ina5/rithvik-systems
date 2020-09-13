@@ -1,6 +1,6 @@
 export default function Index() {
 
     return <>
-        RITHVIK Project Live
+        RITHVIK Project Live — Continuous Deployment
     </>
 }
