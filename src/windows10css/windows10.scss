@@ -1,45 +1,59 @@
 @font-face {
-    font-family: "Segoe UI";
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Semilight"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
     font-weight: 200;
-    src: local("Segoe UI Light");
 }
+
 @font-face {
-    font-family: "Segoe UI";
-    font-weight: 300;
-    src: local("Segoe UI Semilight");
-}
-@font-face {
-    font-family: "Segoe UI";
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
     font-weight: 400;
-    src: local("Segoe UI");
 }
+
 @font-face {
-    font-family: "Segoe UI";
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Bold"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
     font-weight: 600;
-    src: local("Segoe UI Semibold");
 }
+
 @font-face {
-    font-family: "Segoe UI";
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Semibold"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
     font-weight: 700;
-    src: local("Segoe UI Bold");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-style: italic;
-    font-weight: 400;
-    src: local("Segoe UI Italic");
-}
-@font-face {
-    font-family: "Segoe UI";
-    font-style: italic;
-    font-weight: 700;
-    src: local("Segoe UI Bold Italic");
 }
 
 html, body, #__next {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     font-family: 'Segoe UI', sans-serif;
+    background-color: #081922;
+    overflow: hidden;
 }
 
 .computer {
@@ -106,11 +120,6 @@ html, body, #__next {
             background-color: rgba(255, 255, 255, 0.05);
         }
     }
-}
-
-.large {
-    // transform: scale(3);
-    // -webkit-transform: scale(3);
 }
 
 input {

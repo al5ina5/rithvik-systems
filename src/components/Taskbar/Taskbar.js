@@ -37,11 +37,14 @@ export default function Taskbar() {
             </div>
 
             <div className="app hover">
-                <span class="iconify" data-icon="vscode-icons:file-type-vscode2" data-inline="false"></span>            </div>
+                <span className="iconify" data-icon="vscode-icons:file-type-vscode2" data-inline="false"></span>            </div>
 
-            {/* <div className="padded end">&nbsp;</div> */}
 
             <div className="padded small hover end">
+                <i className="fas fa-chevron-up"></i>
+            </div>
+
+            <div className="padded small hover">
                 <i className="fas fa-wifi"></i>
             </div>
 
