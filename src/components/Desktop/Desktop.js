@@ -12,7 +12,7 @@ export default function Desktop() {
             el: backgroundRef.current,
             mouseControls: true,
             touchControls: true,
-            gyroControls: false,
+            gyroControls: true,
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
