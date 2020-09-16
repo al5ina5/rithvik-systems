@@ -31,16 +31,16 @@ export default function Taskbar() {
             </div>
 
             <div className="app active hover">
-                <span className="iconify" data-icon="logos:chrome" data-inline="false"></span>
+                <span className="iconify" data-icon="noto-v1:japanese-application-button" data-inline="false"></span>
             </div>
 
-            <div className="app hover">
+            {/* <div className="app hover">
                 <span className="iconify" data-icon="logos:discord" data-inline="false"></span>
             </div>
 
             <div className="app hover">
                 <span className="iconify" data-icon="vscode-icons:file-type-vscode2" data-inline="false"></span>
-            </div>
+            </div> */}
 
             <div className="padded small hover end">
                 <i className="fas fa-chevron-up"></i>

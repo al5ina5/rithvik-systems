@@ -24,7 +24,7 @@ export default function Cortana() {
             <div className="padded hover">
                 <i className="far fa-circle"></i>
             </div>
-            <input type="text" placeholder="Leave a comment" />
+            <input type="text" placeholder="Powered by RITHVIK" />
             <div className="padded hover end">
                 <i className="fas fa-microphone"></i>
             </div>

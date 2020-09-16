@@ -7,7 +7,7 @@ import styles from './Booter.module.scss'
 
 export default function Booter() {
     var [hideBooter, setHideBooter] = useState(false)
-    var [booterReady, setBooterReady] = useState(false)
+    var [booterReady, setBooterReady] = useState(true)
 
     const myRef = useRef(null)
     useEffect(() => {
@@ -42,6 +42,8 @@ export default function Booter() {
                         <Typist avgTypingDelay={5} cursor={{ show: false }} onTypingDone={() => { setBooterReady(true) }} >
                             <p>RITHVIK System(s) <span style={{ color: 'lime' }}>v1.0.0-beta3</span> booting...</p>
                             <br />
+                            <p style={{ color: 'gray' }}>Integrity check will now begin. Approximate wait time: 11.32s. Click anywhere start in unsafe mode.</p>
+                            <br />
                             <Typist.Delay ms={1000} />
                             <p>Connecting to 127.0.0.1:1337...</p>
                             <Typist.Delay ms={500} />
@@ -58,7 +60,6 @@ export default function Booter() {
                             <br />
                             <p style={{ color: 'gray' }}>Click anywhere to proceed despite this warning.</p>
                         </Typist>
-                        <br />
                     </div>
                 </motion.div>
             </>}
