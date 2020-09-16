@@ -1,12 +1,12 @@
 .desktop {
     height: 100%;
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
 
     .center {
-        margin: auto;
+        margin-top: auto;
+        margin-left: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
 }
