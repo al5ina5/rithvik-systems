@@ -4,8 +4,10 @@
     position: absolute;
     z-index: 10;
     padding: 4rem;
+    pointer-events: none;
 
     .window {
+        pointer-events: all;
         // width: 50%;
         max-width: 700px;
         height: 70%;
