@@ -25,6 +25,9 @@ export default function Desktop() {
     return <>
         <div className={styles.desktop} ref={backgroundRef}>
             <div className={styles.center}>
+                <DesktopIcon name="TempleOSRS" icon="noto:crossed-swords" href="https://templeosrs.com/player/overview.php?player=rithvik" onDoubleClick={() => {
+                    alert('Open Twitch?')
+                }} />
                 <DesktopIcon name="Twitch" icon="logos:twitch" href="https://www.twitch.tv/rithvikkk" onDoubleClick={() => {
                     alert('Open Twitch?')
                     // https://www.twitch.tv/rithvikkk
