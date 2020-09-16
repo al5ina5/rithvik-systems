@@ -2,13 +2,15 @@
     max-width: min-content;
     display: flex;
     flex-direction: column;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
+    color: rgb(98, 98, 98);
+    font-size: 1.3rem;
 
     .icon {
-        font-size: 4rem;
+        font-size: 5rem;
         margin: 1rem;
     }
 
