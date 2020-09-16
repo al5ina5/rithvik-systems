@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
-    color: rgb(98, 98, 98);
+    color:rgba(255, 255, 255, 0.7);
     font-size: 1.3rem;
 
     .icon {
@@ -17,6 +17,15 @@
     .name {
         padding: 0.2rem;
         border-radius: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .desktopIcon {
+        font-size: 1rem;
+        .icon {
+            font-size: 3rem;
+        }
     }
 }
 
