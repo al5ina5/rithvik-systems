@@ -85,6 +85,14 @@ export default function Desktop() {
                             alert('Open Grailed?')
                         }}
                     />
+                    <DesktopIcon
+                        name="HackForums"
+                        icon="simple-icons:hackerrank"
+                        href="https://hackforums.net/member.php?action=profile&uid=1231474"
+                        onDoubleClick={() => {
+                            alert('Open Grailed?')
+                        }}
+                    />
                 </div>
             </div>
         </>
